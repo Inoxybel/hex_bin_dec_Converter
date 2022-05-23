@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Converter</title>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Data Type Converter</h1>
+            </div>
+
+            <div class="main">
+                <div class="action">
+                    <select name="option" id="option" class="mtop" >
+                        <option value="Decimal">Decimal</option>
+                        <option value="Hexadecimal">Hexadecimal</option>
+                        <option value="Binary">Binary</option>
+                    </select>
+                    <input class="inputValue mtop" type="text" name="data" id="data" placeholder="Input a value of selected type">
+                    <input class="inputBtn mtop" type="button" value="Convert" id="convert">
+                </div>
+                <div class="results">
+                    <textarea id="decimal"></textarea>
+                    <textarea id="hexadecimal"></textarea>
+                    <textarea id="binary"></textarea>
+                </div>
+            </div>
+
+            <div class="footer">
+                <h6>Copyright All rights reserved. Developed by ThiagoMatos</h6>
+            </div>
+          </div>
+    </body>
+    <script src="./js/app/interfaceIndex.js" type="module"></script>
+
+</html>

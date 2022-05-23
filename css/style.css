@@ -1,0 +1,119 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid; 
+    max-width: 900px;
+    grid-template-columns: 1fr 5fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 0.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". header ."
+      ". main ."
+      ". main ."
+      ". footer ."; 
+  }
+
+.header { 
+    display: flex;
+    grid-area: header; 
+    background-color: rgba(31, 31, 31, 0.986); 
+    color:white;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    grid-area: main;
+    background-color: rgba(5, 0, 37, 0.767)
+}
+
+.action { 
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    color:white;
+}
+
+.mtop {
+    margin-top: 30px;
+}
+
+.action select {
+    border: 3px solid black;
+    border-right: 1px solid black;
+    background-color: rgb(123, 116, 218);
+    text-align: center;
+}
+.action select:active{
+    background-color: rgb(108, 100, 212);
+}
+
+.action .inputValue {
+    min-height: 32px;
+    min-width: 190px;
+    border: 3px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: rgb(190, 190, 243);
+}
+
+.action .inputBtn{
+    min-height: 40px;
+    border: 3px solid black;
+    border-left: 1px solid black;
+    background-color: rgb(123, 116, 218);
+}
+.action .inputBtn:link, select:link, option:link {
+    background-color: rgb(123, 116, 218);
+}
+.action .inputBtn:hover{
+    background-color: rgb(68, 48, 247);
+}
+.action .inputBtn:active{
+    background-color: rgb(51, 51, 179);
+}
+
+.results{
+    display: block;
+    align-items:center;
+    justify-content: left;
+    margin:0 auto;
+    min-width: 190px;
+    max-width: 354px;
+    border: 3px solid black;
+    border-top: 0;
+    background-color: rgb(190, 190, 243);
+}
+
+.results textarea {
+    background-color: rgb(190, 190, 243);
+    margin: 0;
+    min-width: 348px;
+    height: auto;
+    resize: none;
+    scrollbar-width: 0px;
+    border: none;
+    outline: none;
+}
+
+#option {
+    min-height: 40px;
+}
+
+.footer { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: footer; 
+    background-color: rgb(56, 56, 56); 
+    color:white;
+}
