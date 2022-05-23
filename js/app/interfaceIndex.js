@@ -28,13 +28,13 @@ function validateInput(e) {
 
     switch(option){
         case "Decimal":
-            if (key > 47 && key < 58)
+            if ((key > 47 && key < 58) || (key > 95 && key < 106) || key == 8)
                 return true;
             else
                 e.preventDefault();
         
         case "Hexadecimal":
-            if ((key > 47 && key < 58) || (key > 64 && key < 71) || (key > 96 && key < 103))
+            if ((key > 47 && key < 58) || (key > 64 && key < 71) || (key > 95 && key < 106))
                 return true;
             else
                 e.preventDefault();
